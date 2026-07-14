@@ -745,10 +745,13 @@
 
   /* ---------- Inicialización ---------- */
 
-  var storedLang = null, storedTheme = null;
+  var THEME_DEFAULT_VERSION = 'dark-default-2026-07';
+
+  var storedLang = null, storedTheme = null, storedThemeDefaultVersion = null;
   try {
     storedLang = localStorage.getItem('mt-lang');
     storedTheme = localStorage.getItem('mt-theme');
+    storedThemeDefaultVersion = localStorage.getItem('mt-theme-default-version');
   } catch (e) { /* modo privado */ }
 
   // Permite compartir enlaces con idioma/tema fijados: ?lang=en&theme=dark
@@ -756,11 +759,16 @@
   var urlLang = params.get('lang');
   var urlTheme = params.get('theme');
 
-  // Español por defecto; tema claro por defecto
+  // Español por defecto; tema oscuro por defecto
+  if (storedThemeDefaultVersion !== THEME_DEFAULT_VERSION && storedTheme === 'light') {
+    storedTheme = null;
+  }
+
   var lang = urlLang === 'en' || urlLang === 'es' ? urlLang : (storedLang === 'en' ? 'en' : 'es');
-  var theme = urlTheme === 'dark' || urlTheme === 'light' ? urlTheme : (storedTheme === 'dark' ? 'dark' : 'light');
+  var theme = urlTheme === 'dark' || urlTheme === 'light' ? urlTheme : (storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : 'dark');
 
   applyTheme(theme);
+  try { localStorage.setItem('mt-theme-default-version', THEME_DEFAULT_VERSION); } catch (e) { /* modo privado */ }
   applyLang(lang);
 
   document.querySelectorAll('.lang-btn').forEach(function (btn) {
