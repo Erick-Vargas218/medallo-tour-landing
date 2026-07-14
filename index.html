@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medallo Tour — Tours y Paquetes Turísticos en Medellín | Comuna 13, Guatapé y más</title>
+  <meta name="description" content="Medallo Tour: agencia de tours en Medellín. Comuna 13, Guatapé, City Tour, Chiva Rumbera, Noche Paisa, Silleteros, Parapente, Hacienda Nápoles, shuttle del aeropuerto y más. +3 años de experiencia, +5.000 tours vendidos. Reserva por WhatsApp.">
+  <meta name="keywords" content="medallo tour, medallo tours, tours medellín, tour comuna 13, tour guatapé, paquetes turísticos medellín, city tour medellín, chiva rumbera medellín, tour silleteros, noche paisa, shopping medellín, parapente medellín, hacienda nápoles, shuttle aeropuerto medellín">
+  <meta name="theme-color" content="#FCD116">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Medallo Tour — Vive Medellín como un verdadero paisa">
+  <meta property="og:description" content="Tours guiados por Medellín y Antioquia: Comuna 13, Guatapé, parapente y más. Reserva directo por WhatsApp.">
+  <meta property="og:image" content="assets/img/guatape.jpg">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Tipografías de marca: Anton (titulares) + Barlow (cuerpo) — Tablero de marca Medallo Tour, pareja 01 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Datos estructurados para SEO: búsquedas de "medallo tour" / "medallo tours" -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Medallo Tour",
+    "alternateName": "Medallo Tours",
+    "description": "Agencia de tours y paquetes turísticos en Medellín, Colombia. Comuna 13, Guatapé, City Tour, Parapente, Hacienda Nápoles y más.",
+    "image": "assets/img/logo.jpg",
+    "telephone": "+573246478239",
+    "areaServed": { "@type": "City", "name": "Medellín" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Medellín", "addressRegion": "Antioquia", "addressCountry": "CO" },
+    "sameAs": [
+      "https://www.tiktok.com/@medallotour_",
+      "https://www.facebook.com/profile.php?id=100095446143944",
+      "https://www.instagram.com/medallo_tour"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ======================= HEADER ======================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Medallo Tour — inicio">
+        <img src="assets/img/logo-round.png" alt="Logo de Medallo Tour" class="brand-logo" width="44" height="44">
+        <span class="brand-name">MEDALLO<em>TOUR</em></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#inicio" data-i18n="nav.home">Inicio</a>
+        <a href="#tours" data-i18n="nav.tours">Tours</a>
+        <a href="#nosotros" data-i18n="nav.why">Nosotros</a>
+        <a href="#redes" data-i18n="nav.social">Redes</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Idioma / Language">
+          <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Cambiar tema claro/oscuro">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <a class="btn btn-red btn-sm wa-link header-cta" data-wa="general" href="#" target="_blank" rel="noopener">
+          <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.83 9.83 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.82 9.82 0 0 1 7 2.9 9.82 9.82 0 0 1 2.89 7c0 5.45-4.44 9.87-9.9 9.87zm8.42-18.29A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.89c0 2.1.55 4.14 1.59 5.94L.06 24l6.33-1.66a11.9 11.9 0 0 0 5.66 1.44h.01c6.55 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.16-3.48-8.4z"/></svg>
+          <span data-i18n="nav.cta">Reservar</span>
+        </a>
+
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="tricolor-dots" aria-hidden="true"><span class="d-yellow"></span><span class="d-blue"></span><span class="d-red"></span></div>
+          <p class="kicker" data-i18n="hero.kicker">Agencia de tours en Medellín</p>
+          <h1 class="hero-title">
+            <span data-i18n="hero.t1">VIVE MEDELLÍN</span><br>
+            <span class="accent" data-i18n="hero.t2">COMO UN VERDADERO PAISA</span>
+          </h1>
+          <p class="lead" data-i18n="hero.lead">Tours y paquetes turísticos por Medellín y Antioquia: Comuna 13, Guatapé, parapente, Hacienda Nápoles y más. Guías locales y reserva inmediata por WhatsApp.</p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-red wa-link" data-wa="general" href="#" target="_blank" rel="noopener">
+              <svg class="icon-wa" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.83 9.83 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.82 9.82 0 0 1 7 2.9 9.82 9.82 0 0 1 2.89 7c0 5.45-4.44 9.87-9.9 9.87zm8.42-18.29A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.89c0 2.1.55 4.14 1.59 5.94L.06 24l6.33-1.66a11.9 11.9 0 0 0 5.66 1.44h.01c6.55 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.16-3.48-8.4z"/></svg>
+              <span data-i18n="hero.cta1">Reservar por WhatsApp</span>
+            </a>
+            <a class="btn btn-ghost" href="#tours" data-i18n="hero.cta2">Ver tours</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="stripe-panel">
+            <figure class="hero-img-main">
+              <img src="assets/img/city-tour.jpg" alt="Plaza Botero y el centro de Medellín iluminados de noche" loading="eager">
+            </figure>
+            <figure class="hero-img-a">
+              <img src="assets/img/parapente.jpg" alt="Parapente sobre las montañas de Antioquia con bandera de Colombia" loading="lazy">
+            </figure>
+            <figure class="hero-img-b">
+              <img src="assets/img/chiva-rumbera.jpg" alt="Chiva rumbera tradicional recorriendo Medellín de noche" loading="lazy">
+            </figure>
+            <span class="hero-badge" data-i18n="hero.badge">La ciudad de la eterna primavera</span>
+          </div>
+          <div class="tricolor-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+        </div>
+
+        <ul class="hero-stats reveal" aria-label="Nuestra experiencia">
+          <li><strong>+3</strong><span data-i18n="stats.years">años de experiencia</span></li>
+          <li><strong data-i18n="stats.tours.n">+5.000</strong><span data-i18n="stats.tours">tours vendidos</span></li>
+          <li><strong>+30K</strong><span data-i18n="stats.tiktok">seguidores en TikTok</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= TICKER PAISA ======================= -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Medellín</span><i>●</i><span>La eterna primavera</span><i>●</i><span>Cultura paisa</span><i>●</i><span>¡Una chimba de ciudad!</span><i>●</i><span>Comuna 13</span><i>●</i><span>Guatapé</span><i>●</i><span>Metro de Medellín</span><i>●</i>
+        <span>Medellín</span><i>●</i><span>La eterna primavera</span><i>●</i><span>Cultura paisa</span><i>●</i><span>¡Una chimba de ciudad!</span><i>●</i><span>Comuna 13</span><i>●</i><span>Guatapé</span><i>●</i><span>Metro de Medellín</span><i>●</i>
+      </div>
+    </div>
+
+    <!-- ======================= TOURS ======================= -->
+    <section class="section" id="tours">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="tricolor-dots" aria-hidden="true"><span class="d-yellow"></span><span class="d-blue"></span><span class="d-red"></span></div>
+          <p class="kicker" data-i18n="tours.kicker">Paquetes y servicios</p>
+          <h2 class="section-title"><span data-i18n="tours.t1">NUESTROS</span> <span class="accent" data-i18n="tours.t2">TOURS</span></h2>
+          <p class="section-lead" data-i18n="tours.lead">Precios por persona en pesos colombianos. Toca “Ver detalles” para conocer todo lo que incluye cada experiencia y reserva por WhatsApp.</p>
+          <p class="tours-assist">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v6M9 11h6"/></svg>
+            <span data-i18n="tours.assist">Todos nuestros tours incluyen tarjeta de asistencia médica.</span>
+          </p>
+        </div>
+
+        <div class="tours-grid">
+
+          <!-- Comuna 13 -->
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/comuna13.jpg" alt="Graffiti tour en la Comuna 13 de Medellín" loading="lazy">
+              <span class="tour-price">$75.000 <small data-i18n="t.unit">COP · por persona</small></span>
+              <span class="tour-loc">Medellín</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="c13.name">Tour Comuna 13</h3>
+              <p class="tour-tag" data-i18n="c13.tag">Vive la historia, siente la cultura.</p>
+              <button type="button" class="tour-details" data-tour="c13" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="c13" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- City Tour -->
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/city-tour.jpg" alt="City Tour por el centro histórico de Medellín" loading="lazy">
+              <span class="tour-price">$75.000 <small data-i18n="t.unit">COP · por persona</small></span>
+              <span class="tour-loc">Medellín</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="city.name">City Tour</h3>
+              <p class="tour-tag" data-i18n="city.tag">Descubre los lugares emblemáticos y la cultura local.</p>
+              <button type="button" class="tour-details" data-tour="city" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="city" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Combo City Tour + Comuna 13 -->
+          <article class="tour-card reveal">
+            <div class="tour-media tour-media-combo">
+              <img class="combo-a" src="assets/img/city-tour.jpg" alt="City Tour por Medellín" loading="lazy">
+              <img class="combo-b" src="assets/img/comuna13.jpg" alt="Comuna 13 de Medellín" loading="lazy">
+              <span class="tour-flag" data-i18n="t.comboflag">Combo · Ahorra $35.000</span>
+              <span class="tour-price">$115.000 <small data-i18n="t.unit">COP · por persona</small></span>
+              <span class="tour-loc">Medellín</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="combo.name">City Tour + Comuna 13</h3>
+              <p class="tour-tag" data-i18n="combo.tag">Dos experiencias imperdibles en un solo día.</p>
+              <button type="button" class="tour-details" data-tour="combo" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="combo" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Guatapé -->
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/guatape.jpg" alt="Vista aérea de la Piedra del Peñol y el embalse de Guatapé" loading="lazy">
+              <span class="tour-price">$129.000 <small data-i18n="t.unit">COP · por persona</small></span>
+              <span class="tour-loc">Guatapé, Antioquia</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="gua.name">Tour Guatapé</h3>
+              <p class="tour-tag" data-i18n="gua.tag">Naturaleza, color y aventura en un solo día.</p>
+              <button type="button" class="tour-details" data-tour="gua" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="gua" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Chiva Rumbera -->
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/chiva-rumbera.jpg" alt="Chiva rumbera con luces y música recorriendo Medellín de noche" loading="lazy">
+              <span class="tour-price">$75.000 <small data-i18n="t.unit">COP · por persona</small></span>
+              <span class="tour-loc" data-i18n="t.night">Nocturno</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="chiva.name">Chiva Rumbera</h3>
+              <p class="tour-tag" data-i18n="chiva.tag">La rumba rodante más paisa: música en vivo, luces y fiesta.</p>
+              <button type="button" class="tour-details" data-tour="chiva" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="chiva" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Noche Paisa Tour -->
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/noche-paisa.jpg" alt="Vista nocturna de Medellín desde un mirador" loading="lazy">
+              <span class="tour-price"><small class="from" data-i18n="t.from">Desde</small> $85.000 <small data-i18n="t.unit">COP · por persona</small></span>
+              <span class="tour-loc" data-i18n="t.miradores">Miradores</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="noche.name">Noche Paisa Tour</h3>
+              <p class="tour-tag" data-i18n="noche.tag">Miradores, luces de la ciudad y refrigerio típico paisa.</p>
+              <button type="button" class="tour-details" data-tour="noche" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="noche" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Shopping Paisa Tour -->
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/shopping-paisa.jpg" alt="Centro Comercial Palacio Nacional en el centro de Medellín" loading="lazy">
+              <span class="tour-price"><small class="from" data-i18n="t.from">Desde</small> $85.000 <small data-i18n="t.unit">COP · por persona</small></span>
+              <span class="tour-loc">El Hueco · Guayabal · Mayorca</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="shop.name">Shopping Paisa Tour</h3>
+              <p class="tour-tag" data-i18n="shop.tag">Las 3 mejores zonas de compras en un solo recorrido.</p>
+              <button type="button" class="tour-details" data-tour="shop" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="shop" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tour Silleteros -->
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/silleteros.png" alt="Silletero cargando una silleta de flores en Santa Elena" loading="lazy">
+              <span class="tour-flag" data-i18n="t.newflag">Desde el 27 de julio</span>
+              <span class="tour-price">$129.000 <small data-i18n="t.unit">COP · por persona</small></span>
+              <span class="tour-loc">Santa Elena</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="sil.name">Tour Silleteros</h3>
+              <p class="tour-tag" data-i18n="sil.tag">La tradición de las flores en Santa Elena.</p>
+              <button type="button" class="tour-details" data-tour="sil" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="sil" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Santa Fe de Antioquia -->
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/santa-fe.jpg" alt="Calles coloniales de Santa Fe de Antioquia" loading="lazy">
+              <span class="tour-price"><small class="from" data-i18n="t.from">Desde</small> $120.000 <small data-i18n="t.unit">COP · por persona</small></span>
+              <span class="tour-loc">Santa Fe de Antioquia</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="sfe.name">Tour Santa Fe de Antioquia</h3>
+              <p class="tour-tag" data-i18n="sfe.tag">El encanto colonial de Antioquia.</p>
+              <button type="button" class="tour-details" data-tour="sfe" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="sfe" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Jardín de Antioquia -->
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/jardin-antioquia.jpg" alt="Casas coloridas y montañas del municipio de Jardín, Antioquia" loading="lazy">
+              <span class="tour-price">$145.000 <small data-i18n="t.unit">COP · por persona</small></span>
+              <span class="tour-loc">Jardín, Antioquia</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="jar.name">Jardín de Antioquia</h3>
+              <p class="tour-tag" data-i18n="jar.tag">Naturaleza, cultura y tradición del Suroeste.</p>
+              <button type="button" class="tour-details" data-tour="jar" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="jar" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Parapente -->
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/parapente.jpg" alt="Vuelo en parapente en tándem con bandera de Colombia sobre San Félix" loading="lazy">
+              <span class="tour-price"><small class="from" data-i18n="t.from">Desde</small> $220.000 <small data-i18n="t.unit">COP · por persona</small></span>
+              <span class="tour-loc">San Félix</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="par.name">Tour Parapente</h3>
+              <p class="tour-tag" data-i18n="par.tag">Adrenalina total y vistas increíbles desde el aire.</p>
+              <button type="button" class="tour-details" data-tour="par" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="par" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Hacienda Nápoles -->
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/hacienda-napoles.jpg" alt="Parque temático Hacienda Nápoles" loading="lazy">
+              <span class="tour-price"><small class="from" data-i18n="t.from">Desde</small> $259.000 <small data-i18n="t.unit">COP · por persona</small></span>
+              <span class="tour-loc">Hacienda Nápoles</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="nap.name">Hacienda Nápoles · Santorini</h3>
+              <p class="tour-tag" data-i18n="nap.tag">Naturaleza, aventura y diversión para desconectarte.</p>
+              <button type="button" class="tour-details" data-tour="nap" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="nap" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tour de Pablo -->
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/tour-de-pablo.jpg" alt="Recorrido histórico Tour de Pablo en Medellín" loading="lazy">
+              <span class="tour-price">$410.000 <small data-i18n="t.unit">COP · por persona</small></span>
+              <span class="tour-loc">Medellín · Hacienda Nápoles</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="pab.name">Tour de Pablo</h3>
+              <p class="tour-tag" data-i18n="pab.tag">Un recorrido por la historia y la cultura de Medellín.</p>
+              <button type="button" class="tour-details" data-tour="pab" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="pab" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Shuttle Aeropuerto -->
+          <article class="tour-card reveal">
+            <div class="tour-media">
+              <img src="assets/img/shuttle-aeropuerto.jpg" alt="Van de transporte privado del aeropuerto José María Córdova a Medellín" loading="lazy">
+              <span class="tour-price"><small class="from" data-i18n="t.from">Desde</small> $165.000 <small data-i18n="t.unitpax">COP · por grupo</small></span>
+              <span class="tour-loc">Aeropuerto JMC → Medellín</span>
+            </div>
+            <div class="tour-body">
+              <h3 data-i18n="shu.name">Shuttle Aeropuerto</h3>
+              <p class="tour-tag" data-i18n="shu.tag">Del aeropuerto a Medellín, directo y sin estrés.</p>
+              <button type="button" class="tour-details" data-tour="shu" aria-haspopup="dialog">
+                <span data-i18n="t.details">Ver detalles</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <a class="btn btn-red btn-block wa-link" data-wa="shu" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="t.book">Reservar</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card CTA: plan a tu medida -->
+          <article class="tour-card tour-card-cta reveal">
+            <div class="tour-cta-inner">
+              <div class="tricolor-dots" aria-hidden="true"><span class="d-yellow"></span><span class="d-blue"></span><span class="d-red"></span></div>
+              <h3 data-i18n="custom.title">¿BUSCAS OTRO PLAN?</h3>
+              <p data-i18n="custom.lead">Cuéntanos qué quieres vivir en Medellín y armamos tu experiencia a la medida.</p>
+              <a class="btn btn-yellow wa-link" data-wa="custom" href="#" target="_blank" rel="noopener">
+                <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+                <span data-i18n="custom.btn">Escríbenos</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= MODAL DETALLES DE TOUR ======================= -->
+    <div class="tour-modal" id="tourModal" aria-hidden="true">
+      <div class="tour-modal-backdrop" data-close></div>
+      <div class="tour-modal-panel" role="dialog" aria-modal="true" aria-labelledby="tmTitle">
+        <button type="button" class="tour-modal-close" data-close aria-label="Cerrar detalles">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <div class="tour-modal-media"><img id="tmImg" src="" alt=""></div>
+        <div class="tour-modal-body" id="tmBody"></div>
+      </div>
+    </div>
+
+    <!-- ======================= NOSOTROS / POR QUÉ ======================= -->
+    <section class="section section-alt" id="nosotros">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="tricolor-dots" aria-hidden="true"><span class="d-yellow"></span><span class="d-blue"></span><span class="d-red"></span></div>
+          <p class="kicker" data-i18n="why.kicker">Nosotros</p>
+          <h2 class="section-title"><span data-i18n="why.t1">¿POR QUÉ</span> <span class="accent" data-i18n="why.t2">MEDALLO TOUR?</span></h2>
+          <p class="section-lead" data-i18n="why.lead">Más de 3 años mostrando lo mejor de Medellín y Antioquia, con más de 5.000 tours vendidos.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-icon i-yellow">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 data-i18n="why1.t">Guías 100% locales</h3>
+            <p data-i18n="why1.d">Paisas que conocen cada rincón de la ciudad y te cuentan la historia real de Medellín.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon i-green">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <h3 data-i18n="why2.t">Reserva en minutos</h3>
+            <p data-i18n="why2.d">Escríbenos por WhatsApp y confirma tu cupo al instante, sin formularios ni esperas.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon i-blue">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 data-i18n="why3.t">Experiencia que respalda</h3>
+            <p data-i18n="why3.d">Más de 3 años de operación y más de 5.000 tours vendidos en Medellín y Antioquia.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon i-red">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6v6M16 6v6M2 12h19.6M18 18h-13A3 3 0 0 1 2 15V7a3 3 0 0 1 3-3h11a3 3 0 0 1 3 3v8"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+            </div>
+            <h3 data-i18n="why4.t">Todo resuelto</h3>
+            <p data-i18n="why4.d">La mayoría de nuestros tours incluyen transporte, recorrido y guía turístico.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= REDES SOCIALES ======================= -->
+    <section class="section" id="redes">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="tricolor-dots" aria-hidden="true"><span class="d-yellow"></span><span class="d-blue"></span><span class="d-red"></span></div>
+          <p class="kicker" data-i18n="soc.kicker">Comunidad</p>
+          <h2 class="section-title"><span data-i18n="soc.t1">ÚNETE A LA</span> <span class="accent" data-i18n="soc.t2">COMUNIDAD</span></h2>
+          <p class="section-lead" data-i18n="soc.lead">Síguenos y descubre en video cómo se viven nuestros tours.</p>
+        </div>
+
+        <div class="social-grid">
+          <a class="social-card social-tiktok reveal" href="https://www.tiktok.com/@medallotour_" target="_blank" rel="noopener">
+            <svg class="social-ic" viewBox="0 0 24 24" width="34" height="34" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+            <p class="social-count" data-i18n="soc.tt.n">+30.000</p>
+            <p class="social-desc" data-i18n="soc.tt.d">seguidores viendo Medellín con nosotros</p>
+            <span class="btn btn-yellow btn-sm"><span data-i18n="soc.tt.b">Seguir en TikTok</span></span>
+            <span class="social-handle">@medallotour_</span>
+          </a>
+
+          <a class="social-card social-ig reveal" href="https://www.instagram.com/medallo_tour" target="_blank" rel="noopener">
+            <svg class="social-ic" viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            <p class="social-count">Instagram</p>
+            <p class="social-desc" data-i18n="soc.ig.d">Fotos y momentos reales de nuestros tours.</p>
+            <span class="btn btn-ghost btn-sm"><span data-i18n="soc.follow">Seguir</span></span>
+            <span class="social-handle">@medallo_tour</span>
+          </a>
+
+          <a class="social-card social-fb reveal" href="https://www.facebook.com/profile.php?id=100095446143944" target="_blank" rel="noopener">
+            <svg class="social-ic" viewBox="0 0 24 24" width="34" height="34" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.55-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07z"/></svg>
+            <p class="social-count">Facebook</p>
+            <p class="social-desc" data-i18n="soc.fb.d">Novedades, promociones y comunidad.</p>
+            <span class="btn btn-ghost btn-sm"><span data-i18n="soc.follow">Seguir</span></span>
+            <span class="social-handle">Medallo Tour</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CTA FINAL ======================= -->
+    <section class="final-cta" id="contacto">
+      <div class="tricolor-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="container final-cta-inner reveal">
+        <h2 class="final-title" data-i18n="cta.title">¿LISTO PARA RODAR?</h2>
+        <p class="final-lead" data-i18n="cta.lead">Escríbenos por WhatsApp y arma tu plan en Medellín hoy mismo. Respondemos de una.</p>
+        <a class="btn btn-yellow btn-lg wa-link" data-wa="final" href="#" target="_blank" rel="noopener">
+          <svg class="icon-wa" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><use href="#wa-path"/></svg>
+          <span data-i18n="cta.btn">Reserva tu cupo</span>
+        </a>
+        <p class="final-phone">WhatsApp: <a class="wa-link" data-wa="final" href="#" target="_blank" rel="noopener">+57 324 647 8239</a></p>
+      </div>
+      <div class="tricolor-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+    </section>
+
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand">
+          <img src="assets/img/logo-round.png" alt="Logo de Medallo Tour" class="brand-logo" width="48" height="48">
+          <span class="brand-name">MEDALLO<em>TOUR</em></span>
+        </a>
+        <p data-i18n="foot.desc">Agencia de tours y paquetes turísticos en Medellín, Colombia. Vive la ciudad como un verdadero paisa.</p>
+        <div class="footer-social">
+          <a href="https://www.tiktok.com/@medallotour_" target="_blank" rel="noopener" aria-label="TikTok de Medallo Tour"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg></a>
+          <a href="https://www.instagram.com/medallo_tour" target="_blank" rel="noopener" aria-label="Instagram de Medallo Tour"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=100095446143944" target="_blank" rel="noopener" aria-label="Facebook de Medallo Tour"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.55-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07z"/></svg></a>
+          <a class="wa-link" data-wa="general" href="#" target="_blank" rel="noopener" aria-label="WhatsApp de Medallo Tour"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><use href="#wa-path"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Enlaces del pie de página">
+        <h4 data-i18n="foot.links">Enlaces</h4>
+        <a href="#inicio" data-i18n="nav.home">Inicio</a>
+        <a href="#tours" data-i18n="nav.tours">Tours</a>
+        <a href="#nosotros" data-i18n="nav.why">Nosotros</a>
+        <a href="#redes" data-i18n="nav.social">Redes</a>
+      </nav>
+
+      <div class="footer-contact">
+        <h4 data-i18n="foot.contact">Contacto</h4>
+        <p><span data-i18n="foot.wa">WhatsApp:</span> <a class="wa-link" data-wa="general" href="#" target="_blank" rel="noopener">+57 324 647 8239</a></p>
+        <p data-i18n="foot.city">Medellín, Antioquia — Colombia</p>
+        <a class="btn btn-red btn-sm wa-link" data-wa="general" href="#" target="_blank" rel="noopener">
+          <svg class="icon-wa" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><use href="#wa-path"/></svg>
+          <span data-i18n="nav.cta">Reservar</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Medallo Tour · <span data-i18n="foot.rights">Todos los derechos reservados.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================= WHATSAPP FLOTANTE ======================= -->
+  <a class="wa-float wa-link" data-wa="general" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><use href="#wa-path"/></svg>
+    <span class="wa-float-tip" data-i18n="wa.tip">¿Hablamos?</span>
+  </a>
+
+  <!-- Sprite: ícono WhatsApp reutilizable -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <path id="wa-path" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.83 9.83 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.82 9.82 0 0 1 7 2.9 9.82 9.82 0 0 1 2.89 7c0 5.45-4.44 9.87-9.9 9.87zm8.42-18.29A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.89c0 2.1.55 4.14 1.59 5.94L.06 24l6.33-1.66a11.9 11.9 0 0 0 5.66 1.44h.01c6.55 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.16-3.48-8.4z"/>
+    </defs>
+  </svg>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
