@@ -449,7 +449,7 @@ h1, h2, h3, .brand-name, .btn {
   align-items: center;
   gap: 2.2rem;
   width: max-content;
-  animation: ticker 30s linear infinite;
+  animation: ticker 65s linear infinite;
 }
 
 .ticker-track span {

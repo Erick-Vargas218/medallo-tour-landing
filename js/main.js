@@ -301,6 +301,7 @@
       ],
       inc: [
         ['Transporte', 'Transport'],
+        ['Almuerzo', 'Lunch'],
         ['Recorrido guiado', 'Guided route'],
         ['Guía turístico', 'Tour guide']
       ],
@@ -538,16 +539,17 @@
       price: ['$410.000 COP · por persona', '$410,000 COP · per person'],
       meta: [
         { l: ['Horario', 'Schedule'], v: ['7:00 am – 3:00 pm', '7:00 am – 3:00 pm'] },
-        { l: ['Lugar', 'Location'], v: ['Medellín / Hacienda Nápoles', 'Medellín / Hacienda Nápoles'] },
+        { l: ['Lugar', 'Location'], v: ['Medellín', 'Medellín'] },
         { l: ['Punto de salida', 'Meeting point'], v: ['Recogida en tu hospedaje', 'Pickup at your accommodation'] }
       ],
       desc: [
-        'Recorrido por la historia y la cultura de Medellín, con visita al Museo Pablo Escobar y a la Hacienda Nápoles.',
-        'A journey through Medellín’s history and culture, visiting the Pablo Escobar Museum and Hacienda Nápoles.'
+        'Recorrido por la historia y la cultura de Medellín, con visita al Museo Pablo Escobar, el Barrio Pablo Escobar y el Cementerio Jardines Montesacro.',
+        'A journey through Medellín’s history and culture, visiting the Pablo Escobar Museum, the Pablo Escobar neighborhood and the Jardines Montesacro cemetery.'
       ],
       inc: [
-        ['Museo Pablo Escobar', 'Pablo Escobar Museum'],
-        ['Hacienda Nápoles', 'Hacienda Nápoles'],
+        ['Museo Pablo Escobar (no incluye el fee de entrada)', 'Pablo Escobar Museum (entrance fee not included)'],
+        ['Barrio Pablo Escobar', 'Pablo Escobar neighborhood'],
+        ['Cementerio Jardines Montesacro', 'Jardines Montesacro cemetery'],
         ['Recogida en el hospedaje', 'Hotel pickup']
       ]
     },
