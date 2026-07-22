@@ -54,16 +54,16 @@ copiar y comprobar toda la zona DNS, especialmente los registros de correo.
 ## 4. Activar la analítica del cliente
 
 1. Dentro del proyecto en `topsale-3582`, abrir **Analytics** y pulsar **Enable**.
-2. Abrir **Speed Insights** y pulsar **Enable**.
-3. Generar un nuevo deployment desde **Deployments > Redeploy** o haciendo un nuevo
+2. Generar un nuevo deployment desde **Deployments > Redeploy** o haciendo un nuevo
    `push` a `main`.
-4. Visitar el sitio publicado y comprobar en las herramientas de red del navegador que
+3. Visitar el sitio publicado y comprobar en las herramientas de red del navegador que
    carguen las rutas de Vercel Insights sin errores.
-5. Esperar visitas reales para que aparezcan datos de páginas, referentes, ubicación,
-   dispositivos y Core Web Vitals.
+4. Esperar visitas reales para que aparezcan datos de páginas, referentes, ubicación y
+   dispositivos.
 
-El sitio ya incluye los scripts de Web Analytics y Speed Insights. La política CSP de
-`vercel.json` permite que se comuniquen con las rutas del mismo dominio.
+El sitio ya incluye el script de Web Analytics. La política CSP de `vercel.json` permite
+que se comunique con las rutas del mismo dominio. Speed Insights no se utiliza en este
+proyecto.
 
 ## 5. Retirar Netlify
 
@@ -80,5 +80,5 @@ Hacerlo solo después de comprobar el dominio en Vercel:
 - `www` redirige correctamente al dominio canónico (o al contrario).
 - El certificado HTTPS es válido.
 - Un `push` a `main` dispara un deployment automático.
-- Analytics y Speed Insights pertenecen y son visibles en `topsale-3582`.
+- Analytics pertenece y es visible en `topsale-3582`.
 - Netlify ya no recibe el tráfico del dominio.
