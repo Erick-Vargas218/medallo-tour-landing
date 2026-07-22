@@ -1,56 +1,51 @@
 # Medallo Tour — Landing Page
 
-Landing page estático de **Medallo Tour** (agencia de tours en Medellín).
-No requiere instalación ni servidor especial: es HTML + CSS + JavaScript puro.
+Landing page estática de **Medallo Tour**, publicada en Vercel desde GitHub.
+No requiere instalación ni servidor: utiliza HTML, CSS y JavaScript puro.
 
-## Ver el sitio
+## Flujo de publicación
 
-Abre `index.html` con doble clic, o compártelo con parámetros:
+- Repositorio: `Erick-Vargas218/medallo-tour-landing`
+- Rama de producción: `main`
+- Plataforma de hosting: Vercel
+- Perfil o equipo de Vercel: `topsale-3582`
+- Cada `push` a `main` debe generar un deployment de producción automático.
 
-- `index.html?lang=en` → abre en inglés
-- `index.html?theme=dark` → abre en modo oscuro
-- `index.html?lang=en&theme=dark` → ambos
+La configuración de seguridad del hosting está versionada en `vercel.json`.
+Los pasos de configuración inicial, dominio y analítica están en
+[`DEPLOYMENT_VERCEL.md`](DEPLOYMENT_VERCEL.md).
 
-El visitante puede cambiar idioma (ES/EN) y tema (claro/oscuro) con los botones
-del encabezado; su elección queda guardada en el navegador.
+## Ver el sitio localmente
+
+Abre `index.html` o levanta un servidor estático. Parámetros disponibles:
+
+- `?lang=en`: abre en inglés.
+- `?theme=dark`: abre en modo oscuro.
+- `?lang=en&theme=dark`: combina ambos.
 
 ## Estructura
 
-```
+```text
 medallo-tour-landing/
-├── index.html          ← contenido de la página (textos en español)
-├── css/styles.css      ← estilos (paleta y tipografías del tablero de marca)
-├── js/main.js          ← idioma ES/EN, tema, enlaces de WhatsApp
-├── assets/img/         ← fotos de los tours y logo
-└── favicon.png         ← ícono de la pestaña
+├── index.html
+├── css/styles.css
+├── js/main.js
+├── assets/img/
+├── favicon.png
+└── vercel.json
 ```
 
-## Cómo editar lo más común
+## Ediciones frecuentes
 
-| Quiero cambiar… | Dónde |
+| Cambio | Archivo |
 |---|---|
-| Número de WhatsApp | `js/main.js` → constante `WA_PHONE` |
-| Mensajes prellenados de WhatsApp | `js/main.js` → `WA_MESSAGES` y `WA_TOURS` |
-| Precios de los tours | `index.html` → busca el nombre del tour (ej. `$129.000`) |
-| Textos en español | `index.html` (texto visible) y `js/main.js` (diccionario `T`, primera columna) |
-| Textos en inglés | `js/main.js` → diccionario `T`, segunda columna |
-| Redes sociales | `index.html` → busca `tiktok.com`, `instagram.com`, `facebook.com` |
-| Fotos | reemplaza los archivos en `assets/img/` (mismo nombre) |
+| Número y mensajes de WhatsApp | `js/main.js` (`WA_PHONE`, `WA_MESSAGES`, `WA_TOURS`) |
+| Precios y textos principales | `index.html` |
+| Traducciones al inglés | `js/main.js` (diccionario `T`) |
+| Redes sociales | `index.html` |
+| Fotos | `assets/img/` |
 
-## Publicar (deployment)
+## SEO pendiente del dominio
 
-Cualquiera de estas opciones gratuitas funciona; solo hay que subir la carpeta completa:
-
-1. **Netlify** (más fácil): entra a [netlify.com/drop](https://app.netlify.com/drop) y arrastra la carpeta `medallo-tour-landing`.
-2. **Vercel**: crea un proyecto y sube la carpeta como sitio estático.
-3. **GitHub Pages**: sube la carpeta a un repositorio y activa Pages.
-4. **Hosting propio (dominio como medallotour.co)**: sube el contenido por FTP a la carpeta pública (`public_html`).
-
-> **SEO:** al publicar con dominio propio, agrega en `index.html` la etiqueta
-> `<link rel="canonical" href="https://tudominio.co/">` y actualiza `og:image`
-> con la URL completa del dominio.
-
-## Marca
-
-- Colores: Amarillo `#FCD116` · Azul `#003893` · Rojo `#CE1126` · Verde Paisa `#1E8C43` · Tinta `#131210`
-- Tipografías: **Anton** (titulares) + **Barlow** (cuerpo) — pareja 01 del tablero de marca, cargadas desde Google Fonts.
+Cuando se confirme el dominio definitivo, se debe agregar su URL absoluta como
+`canonical`, `og:url` y en `og:image` dentro de `index.html`.
