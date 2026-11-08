@@ -654,7 +654,7 @@ h1, h2, h3, .brand-name, .btn {
 
 /* Card CTA plan a la medida */
 .tour-card-cta {
-  grid-column: span 2;
+  grid-column: span 4;
   background: repeating-linear-gradient(135deg, var(--blue) 0 22px, var(--blue-2) 22px 44px);
   border: 0;
   justify-content: center;
@@ -1182,6 +1182,7 @@ body.modal-open { overflow: hidden; }
 /* ---------- Responsive ---------- */
 @media (max-width: 1080px) {
   .tours-grid { grid-template-columns: repeat(3, 1fr); }
+  .tour-card-cta { grid-column: span 2; }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -1223,6 +1224,7 @@ body.modal-open { overflow: hidden; }
 
 @media (max-width: 720px) {
   .tours-grid { grid-template-columns: repeat(2, 1fr); }
+  .tour-card-cta { grid-column: span 2; }
 }
 
 @media (max-width: 600px) {

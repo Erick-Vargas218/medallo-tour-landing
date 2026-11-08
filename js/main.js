@@ -25,6 +25,8 @@
     shop:  { es: 'Shopping Paisa Tour',               en: 'Shopping Paisa Tour' },
     sil:   { es: 'Tour Silleteros',                   en: 'Silleteros Tour' },
     sfe:   { es: 'Tour Santa Fe de Antioquia',        en: 'Santa Fe de Antioquia Tour' },
+    rio:   { es: 'Tour Río Claro',                     en: 'Río Claro Tour' },
+    coffee:{ es: 'Coffee Tour',                        en: 'Coffee Tour' },
     jar:   { es: 'Tour Jardín de Antioquia',          en: 'Jardín de Antioquia Tour' },
     par:   { es: 'Tour Parapente',                    en: 'Paragliding Tour' },
     nap:   { es: 'Tour Hacienda Nápoles · Santorini', en: 'Hacienda Nápoles · Santorini Tour' },
@@ -111,6 +113,7 @@
     ],
 
     't.unit':      ['COP · por persona', 'COP · per person'],
+    't.adultunit': ['COP · adulto', 'COP · adult'],
     't.unitgroup': ['COP · por persona', 'COP · per person'],
     't.unitpax':   ['COP · por grupo', 'COP · per group'],
     't.from':      ['Desde', 'From'],
@@ -147,6 +150,13 @@
 
     'sfe.name': ['Tour Santa Fe de Antioquia', 'Santa Fe de Antioquia Tour'],
     'sfe.tag':  ['El encanto colonial de Antioquia.', 'Antioquia’s colonial charm.'],
+
+    'rio.name': ['Tour Río Claro', 'Río Claro Tour'],
+    'rio.tag':  ['Rafting, cavernas y aventura en la naturaleza.', 'Rafting, caves and outdoor adventure.'],
+
+    'coffee.name': ['Coffee Tour', 'Coffee Tour'],
+    'coffee.tag':  ['Del cultivo a la taza, con degustación guiada.', 'From the crop to the cup, with a guided tasting.'],
+    'coffee.loc': ['Finca cafetera', 'Coffee farm'],
 
     'jar.name': ['Jardín de Antioquia', 'Jardín de Antioquia'],
     'jar.tag':  ['Naturaleza, cultura y tradición del Suroeste.', 'Nature, culture and tradition of the Southwest.'],
@@ -244,9 +254,17 @@
     route:  ['Recorrido', 'Itinerary'],
     tips:   ['Recomendaciones', 'Tips'],
     notes:  ['Ten en cuenta', 'Good to know'],
+    rates:  ['Tarifas por edad', 'Rates by age'],
+    booking: ['Reserva y cancelación', 'Booking and cancellation'],
     book:   ['Reservar este tour', 'Book this tour'],
     assist: ['Incluye tarjeta de asistencia médica', 'Medical assistance card included']
   };
+
+  var SHARED_BOOKING_TERMS = [
+    ['Reserva sin anticipo: paga el día del tour.', 'Book without a deposit: pay on the day of the tour.'],
+    ['Cancelación gratis hasta 24 horas antes.', 'Free cancellation up to 24 hours before the tour.'],
+    ['Atención 24/7 por WhatsApp.', '24/7 support on WhatsApp.']
+  ];
 
   var DETAILS = {
     c13: {
@@ -457,25 +475,113 @@
 
     sfe: {
       img: 'assets/img/santa-fe.jpg',
-      price: ['Desde $120.000 COP · por persona', 'From $120,000 COP · per person'],
+      price: ['$129.000 COP · adulto (8 años en adelante)', '$129,000 COP · adult (age 8+)'],
       meta: [
-        { l: ['Horario', 'Schedule'], v: ['8:00 am – 5:00 pm', '8:00 am – 5:00 pm'] },
-        { l: ['Lugar', 'Location'], v: ['Santa Fe de Antioquia', 'Santa Fe de Antioquia'] },
-        { l: ['Punto de salida', 'Meeting point'], v: ['Jardín, Estación Estadio o Parque El Poblado', 'Jardín, Estadio station or El Poblado Park'] }
+        { l: ['Duración', 'Duration'], v: ['10 horas', '10 hours'] },
+        { l: ['Salidas', 'Departures'], v: ['Martes, jueves, viernes, sábados y domingos', 'Tuesday, Thursday, Friday, Saturday and Sunday'] },
+        { l: ['Idioma', 'Language'], v: ['Español', 'Spanish'] },
+        { l: ['Recogida', 'Pickup'], v: ['Punto de encuentro u hotel', 'Meeting point or hotel'] },
+        { l: ['Transporte', 'Transport'], v: ['Compartido', 'Shared'] }
       ],
       desc: [
-        'Viaje al encanto colonial de Antioquia: calles empedradas, arquitectura histórica y el clima cálido de Santa Fe de Antioquia, con transporte, almuerzo, recorrido y guía turístico.',
-        'A trip to Antioquia’s colonial charm: cobblestone streets, historic architecture and the warm weather of Santa Fe de Antioquia, with transport, lunch, guided route and tour guide.'
+        'Descubre la historia y el patrimonio de Santa Fe de Antioquia, sus talleres de filigrana y el Puente de Occidente.',
+        'Explore the history and heritage of Santa Fe de Antioquia, its filigree workshops and the Puente de Occidente bridge.'
+      ],
+      rates: [
+        ['Adulto (8 años en adelante): $129.000 COP', 'Adult (age 8+): $129,000 COP'],
+        ['Niño (4 a 7 años): $119.000 COP', 'Child (ages 4–7): $119,000 COP'],
+        ['Bebé (0 a 3 años): $10.000 COP', 'Infant (ages 0–3): $10,000 COP']
       ],
       inc: [
-        ['Transporte', 'Transport'],
-        ['Almuerzo', 'Lunch'],
-        ['Recorrido guiado', 'Guided route'],
-        ['Guía turístico', 'Tour guide']
+        ['Transporte en vehículos especiales de turismo', 'Transport in dedicated tourist vehicles'],
+        ['Desayuno y almuerzo', 'Breakfast and lunch'],
+        ['Recorrido histórico y patrimonial: Museo Juan del Corral; Iglesia y Parque Santa Bárbara; Catedral Basílica de la Inmaculada Concepción; Parque Principal; Iglesia y Parque Nuestra Señora de Chiquinquirá', 'Historical and heritage tour: Juan del Corral Museum; Santa Bárbara Church and Park; Basilica Cathedral of the Immaculate Conception; Main Square; Nuestra Señora de Chiquinquirá Church and Park'],
+        ['Visita a talleres de filigrana', 'Visit to filigree workshops'],
+        ['Visita al Puente de Occidente', 'Visit to Puente de Occidente'],
+        ['Guía profesional', 'Professional guide'],
+        ['Tarjeta de asistencia médica', 'Medical assistance card']
+      ],
+      exc: [
+        ['Gastos no especificados en el plan', 'Expenses not specified in the plan']
       ],
       notes: [
-        ['Salidas solo sujetas a disponibilidad.', 'Departures subject to availability.']
-      ]
+        ['No hay salidas los lunes ni los miércoles.', 'No departures on Monday or Wednesday.'],
+        ['El bebé paga solo el seguro de viaje, debe ir cargado y sus padres cubren su alimentación y demás gastos.', 'The infant fare covers travel insurance only. The infant must be carried, and parents cover food and other expenses.']
+      ],
+      bookingTerms: true
+    },
+
+    rio: {
+      img: 'assets/img/rio-claro.png',
+      price: ['$259.000 COP · adulto (10 años en adelante)', '$259,000 COP · adult (age 10+)'],
+      meta: [
+        { l: ['Duración', 'Duration'], v: ['14 horas', '14 hours'] },
+        { l: ['Salidas', 'Departures'], v: ['Miércoles a domingo y festivos', 'Wednesday to Sunday and public holidays'] },
+        { l: ['Idioma', 'Language'], v: ['Español', 'Spanish'] },
+        { l: ['Recogida', 'Pickup'], v: ['Punto de encuentro u hotel', 'Meeting point or hotel'] },
+        { l: ['Transporte', 'Transport'], v: ['Compartido', 'Shared'] }
+      ],
+      desc: [
+        'Un día de aventura en Río Claro con rafting, hidrosenderismo y exploración de la Caverna del Cóndor.',
+        'A day of adventure at Río Claro with rafting, river trekking and exploration of the Caverna del Cóndor cave.'
+      ],
+      inc: [
+        ['Transporte en vehículos especiales de turismo', 'Transport in dedicated tourist vehicles'],
+        ['Desayuno y almuerzo', 'Breakfast and lunch'],
+        ['Rafting', 'Rafting'],
+        ['Hidrosenderismo', 'River trekking'],
+        ['Espeleología en la Caverna del Cóndor', 'Caving in the Caverna del Cóndor'],
+        ['Guías profesionales', 'Professional guides'],
+        ['Tarjeta de asistencia médica', 'Medical assistance card']
+      ],
+      exc: [
+        ['Gastos no especificados en el plan', 'Expenses not specified in the plan']
+      ],
+      notes: [
+        ['Edad mínima: 5 años. La tarifa publicada es para personas de 10 años en adelante. No hay tarifa de niño ni de bebé; confirma el precio para niños de 5 a 9 años antes de reservar.', 'Minimum age: 5. The published rate applies to ages 10 and up. There is no child or infant rate; confirm the price for children ages 5–9 before booking.']
+      ],
+      bookingTerms: true
+    },
+
+    coffee: {
+      img: 'assets/img/coffee-tour.png',
+      price: ['$219.000 COP · adulto (8 años en adelante)', '$219,000 COP · adult (age 8+)'],
+      meta: [
+        { l: ['Duración', 'Duration'], v: ['5 horas', '5 hours'] },
+        { l: ['Salidas', 'Departures'], v: ['Todos los días', 'Daily'] },
+        { l: ['Idioma', 'Language'], v: ['Español; inglés en la finca con solicitud previa', 'Spanish; English at the farm if requested in advance'] },
+        { l: ['Recogida', 'Pickup'], v: ['Punto de encuentro u hotel', 'Meeting point or hotel'] },
+        { l: ['Transporte', 'Transport'], v: ['Compartido', 'Shared'] }
+      ],
+      desc: [
+        'Conoce el proceso del café, desde la siembra hasta la taza, con degustación guiada y sabores de la finca.',
+        'Discover the coffee process from planting to the cup, with a guided tasting and flavors from the farm.'
+      ],
+      rates: [
+        ['Adulto (8 años en adelante): $219.000 COP', 'Adult (age 8+): $219,000 COP'],
+        ['Niño (4 a 7 años): $199.000 COP', 'Child (ages 4–7): $199,000 COP'],
+        ['Bebé (0 a 3 años): $10.000 COP', 'Infant (ages 0–3): $10,000 COP']
+      ],
+      inc: [
+        ['Transporte en vehículos especiales de turismo', 'Transport in dedicated tourist vehicles'],
+        ['Recorrido del proceso del café, de la siembra a la taza', 'Tour of the coffee process, from planting to the cup'],
+        ['Bebida de mucílago de café', 'Coffee mucilage drink'],
+        ['Refrigerio de plátano calado con miel y quesito', 'Snack of sweet plantain with honey and fresh cheese'],
+        ['Degustación guiada de cafés especiales', 'Guided specialty coffee tasting'],
+        ['Almuerzo', 'Lunch'],
+        ['Souvenir: café honey de 80 g y granitos de café caramelizados con panela', 'Souvenir: 80 g of honey-processed coffee and coffee beans caramelized with panela'],
+        ['Guía profesional', 'Professional guide'],
+        ['Tarjeta de asistencia médica', 'Medical assistance card']
+      ],
+      exc: [
+        ['Desayuno', 'Breakfast'],
+        ['Gastos no especificados en el plan', 'Expenses not specified in the plan']
+      ],
+      notes: [
+        ['Solicita el guía bilingüe al reservar. El tour en inglés se realiza en la finca.', 'Request the bilingual guide when booking. The English-language tour takes place at the farm.'],
+        ['El bebé paga solo el seguro de viaje, debe ir cargado y sus padres cubren su alimentación y demás gastos.', 'The infant fare covers travel insurance only. The infant must be carried, and parents cover food and other expenses.']
+      ],
+      bookingTerms: true
     },
 
     jar: {
@@ -620,6 +726,10 @@
 
     html += '<p class="tm-desc">' + d.desc[idx] + '</p>';
 
+    if (d.rates) {
+      html += '<p class="tm-h">' + LBL.rates[idx] + '</p>' + listHtml('tm-list', d.rates, idx);
+    }
+
     if (d.route) {
       html += '<p class="tm-h">' + LBL.route[idx] + '</p><ol class="tm-route">' +
         d.route.map(function (r) { return '<li>' + r[idx] + '</li>'; }).join('') + '</ol>';
@@ -653,6 +763,10 @@
     if (d.notes) {
       html += '<p class="tm-h">' + LBL.notes[idx] + '</p>' +
         d.notes.map(function (n) { return '<p class="tm-note">' + n[idx] + '</p>'; }).join('');
+    }
+
+    if (d.bookingTerms) {
+      html += '<p class="tm-h">' + LBL.booking[idx] + '</p>' + listHtml('tm-list', SHARED_BOOKING_TERMS, idx);
     }
 
     html += '<p class="tm-assist">' +
